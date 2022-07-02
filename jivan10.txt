@@ -1,0 +1,211 @@
+Q-1 Write a program to calculate sum of first N natural numbers
+Ans - 
+     #include<stdio.h>
+     #include<conio.h>
+     int main()
+     {
+         int i,a,s=0;
+         printf("Enter n number:");
+         scanf("%d",&a);
+         for(i=1;i<=a;i++)
+            s=s+i;
+            printf(" %d",s);
+         getch();
+      }
+____________________________________________________________________________
+Q-2 Write a program to calculate sum of first N even natural numbers
+Ans = 
+     #include<stdio.h>
+     #include<conio.h>
+
+     int main()
+    {
+         int i,n,s=1,k=0;
+         printf("Enter n number:");
+         scanf("%d",&n);
+         for(i=1;i<=n;i++)
+         {
+            s=i*2;
+            k=k+s;
+         }
+         printf("Sum of first n even natural :  %d",k);
+         getch();
+     }
+____________________________________________________________________________
+Q-3 Write a program to calculate sum of first N odd natural numbers
+Ans -
+    #include<stdio.h>
+    #include<conio.h>
+    int main()
+    {
+        int n,i,s=0,k=0;
+        printf("Enter n number:");
+        scanf("%d",&n); 
+        for(i=1;i<=n;i++)
+        {
+           s=i*2-1;
+           k+=s;
+        }
+        printf("Sum of first n odd natural : %d",k);
+        getch();
+     }
+____________________________________________________________________________
+Q-4 Write a program to calculate sum of squares of first N natural numbers
+Ans - 
+     #include<stdio.h>
+     #include<conio.h>
+     int main()
+     {
+         int n,i,s,k=0;
+         printf("Enter a number:");
+         scanf("%d",&n);
+         for(i=1;i<=n;i++)
+         {
+            s=i*i;
+            k+=s;
+         }
+         printf(" %d",k);
+         getch();
+     }
+____________________________________________________________________________
+Q-5 Write a program to calculate sum of cubes of first N natural numbers
+Ans =
+     #include<stdio.h>
+     #include<conio.h>
+     int main()
+      {
+    int n,i,s,k=0;
+    printf("Enter n number:");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+    s=i*i*i;
+    k=k+s;
+    }
+    printf("Sum of cubes of first n natural : %d",k);
+    getch();
+}
+____________________________________________________________________________
+Q-6 Write a program to calculate factorial of a number
+Ans = 
+
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+    int n,i,s=1,k=0;
+    printf("Enter n number:");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    s=s*i;
+    printf("factotial of natural numbers : %d",s);
+    getch();
+}
+____________________________________________________________________________
+Q-7 Write a program to count digits in a given number
+Ans =
+     #include<stdio.h>
+
+     #include<conio.h>
+
+
+     int main()
+
+     {
+ 
+    int count=0,n,i=0;
+ 
+    printf("Enter a digit:"); 
+ 
+    scanf("%d",&n);
+
+     while(i<n)
+ 
+    {
+ 
+      n=n/10;
+
+      count++;
+ 
+    }
+
+     printf(" %d",count);
+
+     getch();
+     }
+____________________________________________________________________________
+Q-8 Write a program to check whether a given number is a Prime number or not
+Ans = 
+     #include<stdio.h>
+     
+#include<conio.h>
+
+     
+int main()
+
+     {
+
+        int i,a;
+    
+    printf("Enter a number:");
+ 
+        scanf("%d",&a);   
+   
+     for(i=2;i<=a-1;i++)
+ 
+        if(a%i==0)
+
+        break;
+    
+    if(i==a)
+ 
+          printf("Prime");
+    
+    else
+
+          printf("Not Prime");
+
+      }
+
+____________________________________________________________________________
+Q-9 Write a program to calculate LCM of two numbers
+Ans =
+
+
+
+
+
+
+Q-10 Write a program to reverse a given number  
+Ans =
+     #include<stdio.h>
+
+     #include<conio.h>
+     
+
+int main()
+    
+ {
+   
+    int i=1,a,k=1;
+   
+    printf("Enter a number:");
+   
+    scanf("%d",&a);  
+   
+    while(a>=i)    //1>=1
+  
+       {
+     
+    k=a%10;       //a=0   k=1    i=1
+     
+    a=a/10;
+     
+    printf("%d",k); // 321
+
+       }
+
+     } 
+
+____________________________________________________________________________
